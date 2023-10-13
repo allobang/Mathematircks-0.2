@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFE74C;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .circle {
+            width: 250px;
+            height: 250px;
+            background-color: #48A1E0;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .ribbon {
+            background-color: #FF61A6;
+            padding: 10px 30px;
+            font-size: 24px;
+            color: #fff;
+            font-weight: bold;
+            position: absolute;
+            transform: rotate(-20deg);
+            left: 15px;
+        }
+
+        .star {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            background-color: #FF61A6;
+        }
+
+        .star:nth-child(1) {
+            top: 30px;
+            left: 20px;
+        }
+
+        .star:nth-child(2) {
+            top: 60px;
+            right: 20px;
+        }
+
+        .star:nth-child(3) {
+            bottom: 30px;
+            left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="circle">
+        <div class="ribbon">ONLINE QUIZ</div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+    </div>
+</body>
+</html>
